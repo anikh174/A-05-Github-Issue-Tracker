@@ -16,7 +16,7 @@ document.getElementById("signIn-btn").addEventListener("click", function () {
     const signIn = document.getElementById("sign-in");
 
     //  hidden section
-    mainSection.classList.remove("hidden");
+    // mainSection.classList.remove("hidden");
 
     // show section
     signIn.classList.add("hidden");
