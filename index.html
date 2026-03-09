@@ -27,9 +27,93 @@
     />
 
     <!-- font awesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Hello</h1>
+    <!-- header -->
+    <header id="sign-in">
+      <div
+        class="shadow-md max-w-[520px] w-[100%] mx-auto my-5 py-5 md:my-10 md:py-10"
+      >
+        <div class="logo text-center mx-auto">
+          <img
+            class="w-[100px] h-[100px] mx-auto mb-6"
+            src="./assets/github-logo.png"
+            alt=""
+          />
+
+          <h1 class="mb-1 font-semibold text-2xl text-[#1F2937]">
+            GitHub Issues Tracker
+          </h1>
+          <p class="text-[#64748B] text-sm">Sign in to manage your issues</p>
+        </div>
+
+        <div class="form max-w-[520px] w-[100%] mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label text-neutral font-bold pl-2 text-sm"
+                  >Username</label
+                >
+                <input
+                  id="input-username"
+                  type="text"
+                  class="input rounded-md bg-base-200 max-w-[456px] w-[100%] mx-auto"
+                  placeholder="Enter Username"
+                  value="admin"
+                />
+
+                <p class="pl-2 text-[#4A00FF]">Default: admin</p>
+
+                <br />
+
+                <label class="label text-neutral font-bold pl-2 text-sm"
+                  >Password</label
+                >
+                <input
+                  id="input-password"
+                  type="password"
+                  class="input rounded-md bg-base-200 max-w-[456px] w-[100%] mx-auto"
+                  placeholder="Enter Password"
+                  value="admin123"
+                />
+
+                <p class="pl-2 text-[#4A00FF]">Default: admin123</p>
+
+                <button
+                  id="signIn-btn"
+                  class="btn btn-primary mt-4 rounded-md max-w-[456px] w-[100%] mx-auto"
+                >
+                  Sign In
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center max-w-[456px] w-[85%] md:w-[100%] mx-auto mb-6"
+        >
+          <p class="flex-grow border-t-2 border-[#E4E4E7]"></p>
+          <p>OR</p>
+          <p class="flex-grow border-t-2 border-[#E4E4E7]"></p>
+        </div>
+
+        <p class="text-center mb-2 text-[#64748B]">Demo Credentials:</p>
+
+        <div
+          class="text-center bg-[#F8FAFC] p-6 max-w-[456px] w-[85%] md:w-[100%] mx-auto rounded-md"
+        >
+          <p><span class="font-bold text-lg">Username:</span> admin</p>
+          <p><span class="font-bold text-lg">Password:</span> admin123</p>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
