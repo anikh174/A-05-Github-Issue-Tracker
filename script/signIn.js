@@ -15,10 +15,10 @@ document.getElementById("signIn-btn").addEventListener("click", function () {
     const mainSection = document.getElementById("main-section");
     const signIn = document.getElementById("sign-in");
 
-    //  hidden section
+    // remove hidden
     mainSection.classList.remove("hidden");
 
-    // show section
+    // add hidden
     signIn.classList.add("hidden");
   } 
   else {
