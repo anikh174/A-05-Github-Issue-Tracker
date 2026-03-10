@@ -44,16 +44,31 @@ const displayCards = cards => {
 };
 
 loadedData();
+
+const activeBtn = active => {
+  const allBtn = document.getElementById('all-btn');
+  const openBtn = document.getElementById('open-btn');
+  const closedBtn = document.getElementById('closed-btn');
+
+  allBtn.classList.remove('btn-primary');
+  openBtn.classList.remove('btn-primary');
+  closedBtn.classList.remove('btn-primary');
+  document.getElementById(active).classList.add('btn-primary');
+};
+
 const allBtn = () => {
   displayCards(allIssue);
+  activeBtn('all-btn');
 };
 const openBtn = () => {
   const openCards = allIssue.filter(card => card.status === 'open');
   displayCards(openCards);
+  activeBtn('open-btn');
 };
 
 const closedBtn = () => {
   const closedCards = allIssue.filter(card => card.status === 'closed');
   displayCards(closedCards);
+  activeBtn('closed-btn');
 };
 
